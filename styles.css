@@ -182,9 +182,14 @@ input.invalid {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
+    width: 80rem;
+    min-width: 85rem;
   }
   .left {
     flex-basis: 50%;
+  }
+  .buttons {
+    grid-template-columns: repeat(3, 1fr);
   }
   .right {
     flex-basis: 50%;
