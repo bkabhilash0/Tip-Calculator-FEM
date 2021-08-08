@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/logo.svg" alt="Logo" class="logo"/>
+      <div class="calculator">
+        <div class="left">
+          <h2 class="title">Bill</h2>
+          <div class="form-control">
+            <img src="./images/icon-dollar.svg" alt="Dollar" />
+            <input type="text" class="input" id="price" />
+          </div>
+          <h2 class="title">Select Tip %</h2>
+          <div class="buttons">
+            <button class="btn" value="5">5%</button>
+            <button class="btn" value="10">10%</button>
+            <button class="btn active" value="15">15%</button>
+            <button class="btn" value="25">25%</button>
+            <button class="btn" value="50">50%</button>
+            <!-- <button class="btn">50%</button> -->
+            <input class="btn custom" placeholder="Custom" id="custom_btn" />
+          </div>
+          <h2 class="title">Number of People</h2>
+          <div class="form-control">
+            <img src="./images/icon-person.svg" alt="Person" />
+            <input type="text" class="input" min="1" id="people" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <div class="detail">
+              <div class="detail-title">
+                <h2 class="title">Tip Amount</h2>
+                <p class="caption">/ person</p>
+              </div>
+              <h1 class="price" id="bill-tip">$0.00</h1>
+            </div>
+            <div class="detail">
+              <div class="detail-title">
+                <h2 class="title">Total</h2>
+                <p class="caption">/ person</p>
+              </div>
+              <h1 class="price" id="bill-price">$0.00</h1>
+            </div>
+          </div>
+          <button class="btn reset" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
